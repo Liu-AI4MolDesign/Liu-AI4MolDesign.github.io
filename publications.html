@@ -12,66 +12,41 @@
       color: #111;
     }
 
-    .header {
-      position: relative;
-      width: 100%;
-    }
-
-    .header img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: cover;
-    }
-
     .nav {
-      position: absolute;
-      left: 50%;
-      bottom: 40px;
-      transform: translateX(-50%);
+      width: 100%;
       display: flex;
       justify-content: center;
       gap: 28px;
       flex-wrap: wrap;
-      z-index: 2;
+      padding: 24px 20px 18px;
+      border-bottom: 1px solid #e5e5e5;
+      box-sizing: border-box;
     }
 
     .nav a {
       text-decoration: none;
-      color: #fff;
-      font-size: 36px;
-      letter-spacing: 0.5px;
+      color: #111;
+      font-size: 18px;
+      letter-spacing: 0;
       text-transform: uppercase;
-      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
     }
 
     .nav a:hover {
       text-decoration: underline;
-      color: #f3c969;
-    }
-
-    .header::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      height: 120px;
-      background: linear-gradient(to top, rgba(0, 0, 0, 0.45), transparent);
-      pointer-events: none;
     }
 
     .content {
       max-width: 1100px;
       margin: 0 auto;
-      padding: 36px 20px 60px;
+      padding: 28px 20px 60px;
+      box-sizing: border-box;
     }
 
-    .year {
-      font-size: 26px;
+    .section-title {
+      font-size: 28px;
       font-weight: 700;
-      margin: 0 0 14px;
-      padding-bottom: 8px;
+      margin: 0 0 18px;
+      padding-bottom: 10px;
       border-bottom: 1px solid #ddd;
     }
 
@@ -86,8 +61,8 @@
       justify-content: space-between;
       align-items: baseline;
       gap: 24px;
-      border-bottom: 1px solid #eee;
       padding-bottom: 14px;
+      border-bottom: 1px solid #eee;
     }
 
     .pub-main {
@@ -118,8 +93,18 @@
       font-weight: 700;
     }
 
-    .sep {
-      margin: 0 4px;
+    .cofirst {
+      vertical-align: super;
+      font-size: 0.75em;
+    }
+
+    .corresponding {
+      vertical-align: super;
+      font-size: 0.75em;
+    }
+
+    .dot {
+      margin: 0 6px;
     }
 
     @media (max-width: 700px) {
@@ -135,27 +120,25 @@
   </style>
 </head>
 <body>
-  <header class="header">
-    <nav class="nav">
-      <a href="index.html">HOME</a>
-      <a href="research.html">RESEARCH</a>
-      <a href="publications.html">PUBLICATIONS</a>
-      <a href="people.html">PEOPLE</a>
-      <a href="contact.html">CONTACT</a>
-      <a href="resources.html">RESOURCES</a>
-    </nav>
-  </header>
+  <nav class="nav">
+    <a href="index.html">HOME</a>
+    <a href="research.html">RESEARCH</a>
+    <a href="publications.html">PUBLICATIONS</a>
+    <a href="people.html">PEOPLE</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="resources.html">RESOURCES</a>
+  </nav>
 
   <main class="content">
-    <div class="year">2026</div>
+    <div class="section-title">Publications</div>
 
     <div class="pub-list">
       <div class="pub-item">
         <div class="pub-main">
-          <span class="me">Your Name</span>, Author B#, Author C*
-          <span class="sep">.</span>
+          <span class="me">Your Name</span><span class="cofirst">#</span>, Author B<span class="cofirst">#</span>, Author C<span class="corresponding">*</span>
+          <span class="dot">.</span>
           <span>Paper Title One</span>
-          <span class="sep">.</span>
+          <span class="dot">.</span>
           <span>Journal Name, 2026</span>
         </div>
         <div class="pub-links">
@@ -167,11 +150,11 @@
 
       <div class="pub-item">
         <div class="pub-main">
-          Author A#, <span class="me">Your Name</span>, Author C*
-          <span class="sep">.</span>
+          Author A<span class="cofirst">#</span>, <span class="me">Your Name</span><span class="cofirst">#</span>, Author C<span class="corresponding">*</span>
+          <span class="dot">.</span>
           <span>Paper Title Two</span>
-          <span class="sep">.</span>
-          <span>Conference Name, 2026</span>
+          <span class="dot">.</span>
+          <span>Conference Name, 2025</span>
         </div>
         <div class="pub-links">
           <a href="#">PDF</a>
