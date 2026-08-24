@@ -13,42 +13,57 @@
     }
 
     .header {
+      position: relative;
       width: 100%;
-      text-align: center;
     }
 
     .header img {
       width: 100%;
       height: auto;
-      object-fit: cover;
       display: block;
+      object-fit: cover;
     }
 
     .nav {
+      position: absolute;
+      left: 50%;
+      bottom: 18px;
+      transform: translateX(-50%);
       display: flex;
       justify-content: center;
       gap: 28px;
-      padding: 18px 12px;
       flex-wrap: wrap;
-      border-bottom: 1px solid #ddd;
+      z-index: 2;
     }
 
     .nav a {
       text-decoration: none;
-      color: #111;
+      color: #fff;
       font-size: 54px;
       letter-spacing: 0.5px;
       text-transform: uppercase;
+      text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
     }
 
     .nav a:hover {
       text-decoration: underline;
     }
+
+    .header::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 120px;
+      background: linear-gradient(to top, rgba(0, 0, 0, 0.45), transparent);
+      pointer-events: none;
+    }
   </style>
 </head>
 <body>
   <header class="header">
-    <img src="https://raw.githubusercontent.com/Liu-AI4MolDesign/Liu-AI4MolDesign.github.io/main/figures/githubhomepage.png" alt="Header Image" class="header image"/>
+    <img src="https://raw.githubusercontent.com/Liu-AI4MolDesign/Liu-AI4MolDesign.github.io/main/figures/githubhomepage.png" alt="Header Image" class="header-image" />
     <nav class="nav">
       <a href="index.html">HOME</a>
       <a href="research.html">RESEARCH</a>
