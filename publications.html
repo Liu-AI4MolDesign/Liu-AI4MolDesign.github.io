@@ -99,6 +99,11 @@
     .pub-links a:hover {
       text-decoration: underline;
     }
+
+    .me {
+      font-weight: 700;
+      color: #000;
+    }
   </style>
 </head>
 <body>
@@ -112,13 +117,17 @@
 
   <main class="content">
     <h1>Publications</h1>
-
+    <p class="note">
+      <span>* Corresponding author</span>
+      <span># Co-first author</span>
+    </p>
+    
     <section class="year-group">
       <div class="year">2026</div>
       <ul class="pub-list">
         <li class="pub-item">
           <p class="pub-title">Paper Title One</p>
-          <p class="pub-authors">Author A, Author B, Author C</p>
+          <p class="pub-authors"><strong class="me">Your Name</strong>, Author B#, Author C*, Author D</p>
           <p class="pub-journal">Journal Name, 2026</p>
           <div class="pub-links">
             <a href="#">PDF</a>
