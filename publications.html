@@ -27,7 +27,6 @@
       text-decoration: none;
       color: #111;
       font-size: 18px;
-      letter-spacing: 0;
       text-transform: uppercase;
     }
 
@@ -45,9 +44,28 @@
     .section-title {
       font-size: 28px;
       font-weight: 700;
-      margin: 0 0 18px;
+      margin: 0 0 8px;
       padding-bottom: 10px;
       border-bottom: 1px solid #ddd;
+    }
+
+    .legend {
+      font-size: 14px;
+      color: #555;
+      margin: 0 0 22px;
+      line-height: 1.6;
+    }
+
+    .year-block {
+      margin-bottom: 26px;
+    }
+
+    .year-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0 0 14px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #eee;
     }
 
     .pub-list {
@@ -93,11 +111,7 @@
       font-weight: 700;
     }
 
-    .cofirst {
-      vertical-align: super;
-      font-size: 0.75em;
-    }
-
+    .cofirst,
     .corresponding {
       vertical-align: super;
       font-size: 0.75em;
@@ -131,37 +145,60 @@
 
   <main class="content">
     <div class="section-title">Publications</div>
+    <div class="legend"># co-first author; * corresponding author</div>
 
-    <div class="pub-list">
-      <div class="pub-item">
-        <div class="pub-main">
-          <span class="me">Your Name</span><span class="cofirst">#</span>, Author B<span class="cofirst">#</span>, Author C<span class="corresponding">*</span>
-          <span class="dot">.</span>
-          <span>Paper Title One</span>
-          <span class="dot">.</span>
-          <span>Journal Name, 2026</span>
+    <section class="year-block">
+      <div class="year-title">2026</div>
+      <div class="pub-list">
+        <div class="pub-item">
+          <div class="pub-main">
+            <span class="me">Your Name</span><span class="cofirst">#</span>, Author B<span class="cofirst">#</span>, Author C<span class="corresponding">*</span>
+            <span class="dot">.</span>
+            <span>Paper Title One</span>
+            <span class="dot">.</span>
+            <span>Journal Name, 2026</span>
+          </div>
+          <div class="pub-links">
+            <a href="#">PDF</a>
+            <a href="#">DOI</a>
+            <a href="#">Code</a>
+          </div>
         </div>
-        <div class="pub-links">
-          <a href="#">PDF</a>
-          <a href="#">DOI</a>
-          <a href="#">Code</a>
+
+        <div class="pub-item">
+          <div class="pub-main">
+            Author A<span class="cofirst">#</span>, <span class="me">Your Name</span><span class="cofirst">#</span>, Author C<span class="corresponding">*</span>
+            <span class="dot">.</span>
+            <span>Paper Title Two</span>
+            <span class="dot">.</span>
+            <span>Conference Name, 2026</span>
+          </div>
+          <div class="pub-links">
+            <a href="#">PDF</a>
+            <a href="#">DOI</a>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="pub-item">
-        <div class="pub-main">
-          Author A<span class="cofirst">#</span>, <span class="me">Your Name</span><span class="cofirst">#</span>, Author C<span class="corresponding">*</span>
-          <span class="dot">.</span>
-          <span>Paper Title Two</span>
-          <span class="dot">.</span>
-          <span>Conference Name, 2025</span>
-        </div>
-        <div class="pub-links">
-          <a href="#">PDF</a>
-          <a href="#">DOI</a>
+    <section class="year-block">
+      <div class="year-title">2025</div>
+      <div class="pub-list">
+        <div class="pub-item">
+          <div class="pub-main">
+            Author X, <span class="me">Your Name</span><span class="corresponding">*</span>
+            <span class="dot">.</span>
+            <span>Paper Title Three</span>
+            <span class="dot">.</span>
+            <span>Journal Name, 2025</span>
+          </div>
+          <div class="pub-links">
+            <a href="#">PDF</a>
+            <a href="#">DOI</a>
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   </main>
 </body>
 </html>
