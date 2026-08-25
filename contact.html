@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact - Liu Lab</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #111;
+    }
+
+    .nav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      flex-wrap: wrap;
+      padding: 24px 20px 18px;
+      border-bottom: 1px solid #e5e5e5;
+      box-sizing: border-box;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #111;
+      font-size: 28px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+      color: #f3c969;
+    }
+
+    .content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 20px 60px;
+      box-sizing: border-box;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0 0 22px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .intro {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #222;
+      margin-bottom: 28px;
+      max-width: 920px;
+    }
+
+    .contact-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .contact-item {
+      padding: 18px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .contact-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 8px;
+    }
+
+    .contact-desc {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333;
+      margin: 0;
+      max-width: 950px;
+    }
+
+    .contact-desc a {
+      color: #2b6ea6;
+      text-decoration: none;
+    }
+
+    .contact-desc a:hover {
+      text-decoration: underline;
+    }
+
+    .map-wrap {
+      margin-top: 18px;
+      width: 100%;
+      max-width: 950px;
+    }
+
+    .map-frame {
+      width: 100%;
+      height: 420px;
+      border: 1px solid #ddd;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html">HOME</a>
+    <a href="research.html">RESEARCH</a>
+    <a href="publications.html">PUBLICATIONS</a>
+    <a href="people.html">PEOPLE</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="resources.html">RESOURCES</a>
+  </nav>
+
+  <main class="content">
+    <div class="section-title">Contact</div>
+
+    <div class="intro">
+      Please feel free to contact us for research inquiries, collaborations, or questions about the lab.
+    </div>
+
+    <section class="contact-list">
+      <div class="contact-item">
+        <div class="contact-title">Principal Investigator</div>
+        <p class="contact-desc">
+          <strong>Professor Name</strong><br />
+          Title, Department, University<br />
+          Email: <a href="mailto:pi@university.edu">pi@university.edu</a><br />
+          Office: Building Name, Room 123<br />
+          Address: University Name, City, State ZIP
+        </p>
+      </div>
+
+      <div class="contact-item">
+        <div class="contact-title">Location</div>
+        <div class="map-wrap">
+          <iframe
+            class="map-frame"
+            src="https://www.google.com/maps?q=University%20Name&output=embed"
+            title="Map showing lab location"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
