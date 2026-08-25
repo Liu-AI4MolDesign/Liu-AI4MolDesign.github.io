@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Research - Liu Lab</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #111;
+    }
+
+    .nav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      flex-wrap: wrap;
+      padding: 24px 20px 18px;
+      border-bottom: 1px solid #e5e5e5;
+      box-sizing: border-box;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #111;
+      font-size: 28px;
+      text-transform: uppercase;
+      letter-spacing: 0;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 20px 60px;
+      box-sizing: border-box;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0 0 22px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .intro {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #222;
+      margin-bottom: 28px;
+      max-width: 920px;
+    }
+
+    .research-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0;
+    }
+
+    .research-item {
+      padding: 18px 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .research-title {
+      font-size: 20px;
+      font-weight: 700;
+      margin: 0 0 8px;
+    }
+
+    .research-desc {
+      font-size: 16px;
+      line-height: 1.8;
+      color: #333;
+      margin: 0;
+      max-width: 950px;
+    }
+
+    .research-subtitle {
+      font-size: 16px;
+      font-weight: 700;
+      margin: 20px 0 8px;
+    }
+
+    .research-points {
+      margin: 0;
+      padding-left: 20px;
+      color: #333;
+      line-height: 1.8;
+      font-size: 16px;
+      max-width: 950px;
+    }
+
+    .research-points li {
+      margin: 4px 0;
+    }
+
+    .highlight {
+      color: #2b6ea6;
+      font-weight: 600;
+    }
+
+    .note {
+      margin-top: 26px;
+      font-size: 15px;
+      line-height: 1.7;
+      color: #555;
+      max-width: 920px;
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html">HOME</a>
+    <a href="research.html">RESEARCH</a>
+    <a href="publications.html">PUBLICATIONS</a>
+    <a href="people.html">PEOPLE</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="resources.html">RESOURCES</a>
+  </nav>
+
+  <main class="content">
+    <div class="section-title">Research</div>
+
+    <div class="intro">
+      Our group focuses on the development of <span class="highlight">AI-driven computational methods</span> and their integration with experimental validation for biological molecule design and discovery.
+      We are interested in how machine learning, structural modeling, and wet-lab feedback can be combined to improve both predictive accuracy and practical usefulness in real research settings.
+    </div>
+
+    <section class="research-list">
+      <div class="research-item">
+        <div class="research-title">Computational Protein Design</div>
+        <p class="research-desc">
+          We develop computational strategies for protein design, including sequence optimization, structure-aware modeling, and property prediction.
+          Our goal is to generate proteins with desired stability, activity, specificity, and binding behavior, while keeping the workflow compatible with experimental validation.
+        </p>
+      </div>
+
+      <div class="research-item">
+        <div class="research-title">AI-based Methodology Development</div>
+        <p class="research-desc">
+          We build machine learning methods for molecular and protein engineering, with an emphasis on generalization, interpretability, and data efficiency.
+          These methods are designed to support scientific discovery rather than function only as standalone prediction tools.
+        </p>
+      </div>
+
+      <div class="research-item">
+        <div class="research-title">Closed-loop Wet-Lab Validation</div>
+        <p class="research-desc">
+          Computational predictions are validated through experimental assays to measure protein function, binding, expression, and other biochemical properties.
+          This closed-loop workflow helps refine models and improves the reliability of design and discovery.
+        </p>
+      </div>
+
+      <div class="research-item">
+        <div class="research-title">Applications in Biological Discovery</div>
+        <p class="research-desc">
+          We apply our approaches to problems in enzyme engineering, therapeutic design, and protein function understanding.
+          By combining computation and experiment, we aim to accelerate the discovery of useful biological systems.
+        </p>
+
+        <div class="research-subtitle">Typical directions in the lab include:</div>
+        <ul class="research-points">
+          <li>Protein sequence and structure design</li>
+          <li>Modeling protein stability and function</li>
+          <li>Data-driven methodology for molecular engineering</li>
+          <li>Integration of prediction models with experimental assays</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="note">
+      If you want, this page can be tightened further to match the exact wording and scope of your lab, for example by replacing the generic research blocks with your real project categories.
+    </div>
+  </main>
+</body>
+</html>
