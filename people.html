@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>People - Liu Lab</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fff;
+      color: #111;
+    }
+
+    .nav {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      flex-wrap: wrap;
+      padding: 24px 20px 18px;
+      border-bottom: 1px solid #e5e5e5;
+      box-sizing: border-box;
+    }
+
+    .nav a {
+      text-decoration: none;
+      color: #111;
+      font-size: 18px;
+      text-transform: uppercase;
+    }
+
+    .nav a:hover {
+      text-decoration: underline;
+    }
+
+    .content {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 28px 20px 60px;
+      box-sizing: border-box;
+    }
+
+    .section-title {
+      font-size: 28px;
+      font-weight: 700;
+      margin: 0 0 22px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .group {
+      margin-bottom: 34px;
+    }
+
+    .group-title {
+      font-size: 22px;
+      font-weight: 700;
+      margin: 0 0 16px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .person-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .person {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      padding-bottom: 14px;
+      border-bottom: 1px solid #eee;
+      align-items: flex-start;
+    }
+
+    .person-left {
+      display: flex;
+      gap: 18px;
+      flex: 1;
+      min-width: 0;
+    }
+
+    .person-photo {
+      width: 110px;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      border: 1px solid #ddd;
+      flex-shrink: 0;
+      background: #f5f5f5;
+    }
+
+    .person-main {
+      flex: 1;
+      min-width: 0;
+      line-height: 1.7;
+      font-size: 16px;
+      padding-top: 2px;
+    }
+
+    .person-name {
+      font-weight: 700;
+    }
+
+    .person-role {
+      color: #2b6ea6;
+      font-style: italic;
+      margin-left: 8px;
+    }
+
+    .person-desc {
+      margin-top: 4px;
+      color: #333;
+    }
+
+    .person-links {
+      flex-shrink: 0;
+      display: flex;
+      gap: 14px;
+      white-space: nowrap;
+      align-items: flex-start;
+      font-size: 15px;
+      padding-top: 2px;
+    }
+
+    .person-links a {
+      color: #1f5faa;
+      text-decoration: none;
+    }
+
+    .person-links a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 700px) {
+      .person {
+        flex-direction: column;
+        gap: 12px;
+      }
+
+      .person-left {
+        width: 100%;
+      }
+
+      .person-links {
+        margin-left: 128px;
+      }
+    }
+
+    @media (max-width: 520px) {
+      .person-left {
+        flex-direction: column;
+      }
+
+      .person-links {
+        margin-left: 0;
+      }
+
+      .person-photo {
+        width: 140px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="index.html">HOME</a>
+    <a href="research.html">RESEARCH</a>
+    <a href="publications.html">PUBLICATIONS</a>
+    <a href="people.html">PEOPLE</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="resources.html">RESOURCES</a>
+  </nav>
+
+  <main class="content">
+    <div class="section-title">People</div>
+
+    <section class="group">
+      <div class="group-title">Principal Investigator</div>
+      <div class="person-list">
+        <div class="person">
+          <div class="person-left">
+            <img class="person-photo" src="images/pi.jpg" alt="Prof. Your Name" />
+            <div class="person-main">
+              <span class="person-name">Prof. Your Name</span>
+              <div class="person-desc">
+                Professor, Department of XXX<br />
+                Research interests: XXXX, XXXX, XXXX
+              </div>
+            </div>
+          </div>
+          <div class="person-links">
+            <a href="#">Website</a>
+            <a href="#">Email</a>
+            <a href="#">CV</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="group">
+      <div class="group-title">Members</div>
+      <div class="person-list">
+        <div class="person">
+          <div class="person-left">
+            <img class="person-photo" src="images/student1.jpg" alt="Student Name 1" />
+            <div class="person-main">
+              <span class="person-name">Student Name 1</span>
+              <span class="person-role">Ph.D. Student</span>
+              <div class="person-desc">
+                Research topic or short description.
+              </div>
+            </div>
+          </div>
+          <div class="person-links">
+            <a href="#">Profile</a>
+            <a href="#">Email</a>
+          </div>
+        </div>
+
+        <div class="person">
+          <div class="person-left">
+            <img class="person-photo" src="images/student2.jpg" alt="Student Name 2" />
+            <div class="person-main">
+              <span class="person-name">Student Name 2</span>
+              <span class="person-role">M.S. Student</span>
+              <div class="person-desc">
+                Research topic or short description.
+              </div>
+            </div>
+          </div>
+          <div class="person-links">
+            <a href="#">Profile</a>
+            <a href="#">Email</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="group">
+      <div class="group-title">Alumni</div>
+      <div class="person-list">
+        <div class="person">
+          <div class="person-left">
+            <img class="person-photo" src="images/alumni1.jpg" alt="Alumni Name" />
+            <div class="person-main">
+              <span class="person-name">Alumni Name</span>
+              <div class="person-desc">
+                Former member, now at XXX.
+              </div>
+            </div>
+          </div>
+          <div class="person-links">
+            <a href="#">Profile</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
